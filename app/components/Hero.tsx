@@ -32,7 +32,7 @@ export default function Hero() {
             </p>
             <a
               href="#contact"
-              className="inline-block bg-brand-purple text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-brand-purple/80 transition-colors"
+              className="inline-block bg-[#7C3AED] text-white px-8 py-4 rounded-full font-semibold text-lg hover:opacity-80 transition-opacity"
             >
               Start a conversation
             </a>

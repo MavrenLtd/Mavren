@@ -16,7 +16,7 @@ export default function Contact() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
           <a
             href="mailto:info@mavren.dev"
-            className="bg-brand-purple text-white px-8 py-4 rounded-full font-semibold hover:bg-brand-purple/80 transition-colors"
+            className="bg-[#9333EA] text-white px-8 py-4 rounded-full font-semibold hover:opacity-80 transition-opacity"
           >
             Send us a message
           </a>
@@ -24,7 +24,7 @@ export default function Contact() {
             href="https://www.linkedin.com/company/122674153"
             target="_blank"
             rel="noopener noreferrer"
-            className="border border-brand-purple text-light-lavender px-8 py-4 rounded-full font-semibold hover:bg-brand-purple/20 transition-colors"
+            className="border border-[#A855F7] text-[#A855F7] px-8 py-4 rounded-full font-semibold hover:opacity-80 transition-opacity"
           >
             Connect on LinkedIn
           </a>

@@ -21,7 +21,7 @@ export default function Nav() {
           <Link href="#work" className="text-lavender hover:text-light-lavender transition-colors text-sm">Work</Link>
           <Link
             href="#contact"
-            className="bg-brand-purple text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-brand-purple/80 transition-colors"
+            className="bg-[#5B21B6] text-white px-5 py-2 rounded-full text-sm font-medium hover:opacity-80 transition-opacity"
           >
             Get in Touch
           </Link>

@@ -4,7 +4,7 @@ export default function About() {
   return (
     <section id="about" className="relative py-24 overflow-hidden">
       <Image
-        src="/Mavren-Logo-Stacked-WavyBg-1200x1200.png"
+        src="/Wavy purple background-darker.png"
         alt=""
         fill
         className="object-cover object-center"

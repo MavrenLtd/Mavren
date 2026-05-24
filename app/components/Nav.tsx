@@ -7,7 +7,7 @@ export default function Nav() {
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3">
           <Image
-            src="/Mavren-Logo-Stacked-WavyBg-300x300.png"
+            src="/Mavren-Doc-Stamp-LightPurpleFill-300x300.png"
             alt="Mavren"
             width={36}
             height={36}

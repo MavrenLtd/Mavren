@@ -2,15 +2,8 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section id="about" className="relative py-24 overflow-hidden">
-      <Image
-        src="/Wavy purple background-darker.png"
-        alt=""
-        fill
-        className="object-cover object-center"
-        aria-hidden="true"
-      />
-      <div className="relative z-10 max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+    <section id="about" className="bg-dark-purple py-24">
+      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
         <div>
           <p className="text-brand-purple font-semibold text-sm uppercase tracking-widest mb-4">
             About Mavren
@@ -53,6 +46,7 @@ export default function About() {
             alt="Mavren"
             width={420}
             height={420}
+            className="rounded-2xl"
           />
         </div>
       </div>

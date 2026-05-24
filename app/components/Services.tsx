@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const services = [
   {
     title: "Data Engineering & Cloud Platforms",
@@ -35,16 +33,8 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="relative py-24 overflow-hidden">
-      <Image
-        src="/Wavy purple background-darker.png"
-        alt=""
-        fill
-        className="object-cover object-center"
-        aria-hidden="true"
-      />
-      <div className="absolute inset-0 bg-navy/60" />
-      <div className="relative z-10 max-w-7xl mx-auto px-6">
+    <section id="services" className="bg-dark-purple py-24">
+      <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <p className="text-brand-purple font-semibold text-sm uppercase tracking-widest mb-4">
             What We Do

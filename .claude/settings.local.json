@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(git checkout *)",
+      "Bash(git add *)",
+      "Bash(npx next *)",
+      "PowerShell(Copy-Item \"c:\\\\Users\\\\candi\\\\OneDrive\\\\Documents\\\\Mavren Ltd\\\\Source\\\\Mavren\\\\images\\\\Wavy purple background-darker.png\" \"c:\\\\Users\\\\candi\\\\OneDrive\\\\Documents\\\\Mavren Ltd\\\\Source\\\\Mavren\\\\public\\\\\" -Force)",
+      "PowerShell(Copy-Item \"c:\\\\Users\\\\candi\\\\OneDrive\\\\Documents\\\\Mavren Ltd\\\\Source\\\\Mavren\\\\images\\\\Wavy purple background.png\" \"c:\\\\Users\\\\candi\\\\OneDrive\\\\Documents\\\\Mavren Ltd\\\\Source\\\\Mavren\\\\public\\\\\" -Force)",
+      "PowerShell(Copy-Item \"c:\\\\Users\\\\candi\\\\OneDrive\\\\Documents\\\\Mavren Ltd\\\\Source\\\\Mavren\\\\public\\\\Mavren-Doc-Stamp-LightPurpleFill-300x300.png\" \"c:\\\\Users\\\\candi\\\\OneDrive\\\\Documents\\\\Mavren Ltd\\\\Source\\\\Mavren\\\\app\\\\icon.png\" -Force)"
+    ]
+  }
+}

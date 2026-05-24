@@ -2,16 +2,24 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section id="about" className="bg-light-lavender py-24">
-      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+    <section id="about" className="relative py-24 overflow-hidden">
+      <Image
+        src="/Mavren-Logo-Stacked-WavyBg-1200x1200.png"
+        alt=""
+        fill
+        className="object-cover object-center"
+        aria-hidden="true"
+      />
+      <div className="absolute inset-0 bg-navy/60" />
+      <div className="relative z-10 max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
         <div>
           <p className="text-brand-purple font-semibold text-sm uppercase tracking-widest mb-4">
             About Mavren
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-navy mb-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
             Built differently.<br />By design.
           </h2>
-          <div className="space-y-5 text-dark-purple text-lg leading-relaxed">
+          <div className="space-y-5 text-lavender text-lg leading-relaxed">
             <p>
               We started Mavren because we believed there was a better way to deliver technology
               consulting — less PowerPoint, more working software.
@@ -34,7 +42,7 @@ export default function About() {
               consultants and partner firms we work with regularly — so we can scale up quickly
               without ever compromising on quality.
             </p>
-            <p className="text-navy font-semibold">
+            <p className="text-light-lavender font-semibold">
               Whether you need a single embedded engineer or a small delivery team, we&apos;ll make it
               work.
             </p>
@@ -42,11 +50,10 @@ export default function About() {
         </div>
         <div className="flex justify-center">
           <Image
-            src="/Mavren-Logo-Stacked-WavyBg-720x720.png"
+            src="/Mavren-Logo-Stacked-Transparent-720x720.png"
             alt="Mavren"
             width={420}
             height={420}
-            className=""
           />
         </div>
       </div>

@@ -10,7 +10,6 @@ export default function About() {
         className="object-cover object-center"
         aria-hidden="true"
       />
-      <div className="absolute inset-0 bg-navy/60" />
       <div className="relative z-10 max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
         <div>
           <p className="text-brand-purple font-semibold text-sm uppercase tracking-widest mb-4">
@@ -50,7 +49,7 @@ export default function About() {
         </div>
         <div className="flex justify-center">
           <Image
-            src="/Mavren-Logo-Stacked-Transparent-720x720.png"
+            src="/Mavren-Logo-Stacked-WavyBg-720x720.png"
             alt="Mavren"
             width={420}
             height={420}

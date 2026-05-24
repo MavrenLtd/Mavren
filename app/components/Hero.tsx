@@ -15,8 +15,8 @@ export default function Hero() {
       </div>
       <div className="bg-navy py-20">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="max-w-2xl">
-            <p className="text-brand-purple font-semibold text-sm uppercase tracking-widest mb-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <p className="text-lavender font-semibold text-sm uppercase tracking-widest mb-4">
               Navigate Ambiguity, Ship Clarity.
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
@@ -32,7 +32,7 @@ export default function Hero() {
             </p>
             <a
               href="#contact"
-              className="inline-block bg-[#7C3AED] text-white px-8 py-4 rounded-full font-semibold text-lg hover:opacity-80 transition-opacity"
+              className="inline-block bg-[#5B21B6] text-white px-8 py-4 rounded-full font-semibold text-lg hover:opacity-80 transition-opacity"
             >
               Start a conversation
             </a>

@@ -5,7 +5,7 @@ export default function Hero() {
     <section>
       <div className="w-full pt-16">
         <Image
-          src="/Mavren-Hero-Banner-1920x600.png"
+          src="/hero-banner-purple.png"
           alt="Mavren — Navigate Ambiguity, Ship Clarity"
           width={1920}
           height={600}

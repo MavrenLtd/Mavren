@@ -40,21 +40,33 @@ export default function WorkHighlights() {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
-          {highlights.map((item) => (
-            <div
-              key={item.title}
-              className="bg-dark-purple rounded-2xl p-8 border border-brand-purple/20 flex flex-col"
-            >
-              <p className="text-brand-purple text-xs font-semibold uppercase tracking-widest mb-4">
-                {item.tag}
-              </p>
-              <h3 className="text-xl font-bold text-white mb-4">{item.title}</h3>
-              <p className="text-lavender leading-relaxed text-sm mb-6 flex-1">{item.teaser}</p>
-              <p className="text-light-lavender font-semibold italic text-sm border-t border-brand-purple/20 pt-5">
-                {item.closing}
-              </p>
-            </div>
-          ))}
+          {highlights.map((item, i) => {
+            const isLight = i % 2 === 0;
+            return (
+              <div
+                key={item.title}
+                style={{
+                  backgroundImage: `url('/${isLight ? "hero-wave-light.png" : "hero-wave-dark.png"}')`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
+                className="rounded-2xl p-8 border border-white/10 flex flex-col overflow-hidden"
+              >
+                <p className={`text-xs font-semibold uppercase tracking-widest mb-4 ${isLight ? "text-[#534AB7]" : "text-[#AFA9EC]"}`}>
+                  {item.tag}
+                </p>
+                <h3 className={`text-xl font-bold mb-4 ${isLight ? "text-[#0D0B1E]" : "text-white"}`}>
+                  {item.title}
+                </h3>
+                <p className={`leading-relaxed text-sm mb-6 flex-1 ${isLight ? "text-[#26215C]" : "text-[#AFA9EC]"}`}>
+                  {item.teaser}
+                </p>
+                <p className={`font-semibold italic text-sm border-t pt-5 ${isLight ? "text-[#0D0B1E] border-[#534AB7]/20" : "text-[#EEEDFE] border-white/10"}`}>
+                  {item.closing}
+                </p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

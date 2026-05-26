@@ -47,21 +47,32 @@ export default function Services() {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.map((service) => (
-            <div
-              key={service.title}
-              className="bg-navy rounded-2xl p-8 border border-brand-purple/20 hover:border-brand-purple/60 transition-colors group"
-            >
-              <div className="w-10 h-10 bg-brand-purple/20 rounded-lg flex items-center justify-center mb-5 group-hover:bg-brand-purple/30 transition-colors">
-                <div className="w-4 h-4 bg-brand-purple rounded-sm" />
+          {services.map((service, i) => {
+            const isLight = i % 2 === 0;
+            return (
+              <div
+                key={service.title}
+                style={{
+                  backgroundImage: `url('/${isLight ? "hero-wave-light.png" : "hero-wave-dark.png"}')`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
+                className="rounded-2xl p-8 border border-white/10 hover:border-white/25 transition-colors group overflow-hidden"
+              >
+                <div className={`w-10 h-10 rounded-lg flex items-center justify-center mb-5 transition-colors ${isLight ? "bg-[#534AB7]/15 group-hover:bg-[#534AB7]/25" : "bg-white/10 group-hover:bg-white/20"}`}>
+                  <div className={`w-4 h-4 rounded-sm ${isLight ? "bg-[#534AB7]" : "bg-white"}`} />
+                </div>
+                <h3 className={`text-xl font-bold mb-3 ${isLight ? "text-[#0D0B1E]" : "text-white"}`}>
+                  {service.title}
+                </h3>
+                <p className={`leading-relaxed text-sm ${isLight ? "text-[#26215C]" : "text-[#AFA9EC]"}`}>
+                  {service.description}
+                </p>
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">{service.title}</h3>
-              <p className="text-lavender leading-relaxed text-sm">{service.description}</p>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
   );
 }
-

@@ -33,18 +33,30 @@ export default function HowWeWork() {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-12">
-          {gears.map((gear, i) => (
-            <div
-              key={gear.name}
-              className="bg-dark-purple rounded-2xl p-8 border border-brand-purple/20 relative overflow-hidden"
-            >
-              <div className="text-brand-purple/10 font-bold text-8xl absolute -top-4 -right-2 select-none">
-                {i + 1}
+          {gears.map((gear, i) => {
+            const isLight = i % 2 === 0;
+            return (
+              <div
+                key={gear.name}
+                style={{
+                  backgroundImage: `url('/${isLight ? "hero-wave-light.png" : "hero-wave-dark.png"}')`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
+                className="rounded-2xl p-8 border border-white/10 relative overflow-hidden"
+              >
+                <div className={`font-bold text-8xl absolute -top-4 -right-2 select-none ${isLight ? "text-[#0D0B1E]/10" : "text-white/10"}`}>
+                  {i + 1}
+                </div>
+                <h3 className={`text-2xl font-bold mb-4 ${isLight ? "text-[#0D0B1E]" : "text-white"}`}>
+                  {gear.name}
+                </h3>
+                <p className={`leading-relaxed ${isLight ? "text-[#26215C]" : "text-[#AFA9EC]"}`}>
+                  {gear.description}
+                </p>
               </div>
-              <h3 className="text-2xl font-bold text-white mb-4">{gear.name}</h3>
-              <p className="text-lavender leading-relaxed">{gear.description}</p>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         <p className="text-center text-lavender text-lg max-w-3xl mx-auto">

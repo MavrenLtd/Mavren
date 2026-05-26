@@ -3,13 +3,21 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section>
-      <div className="w-full pt-16">
+      <div
+        className="w-full pt-16 flex items-center justify-center"
+        style={{
+          backgroundImage: "url('/purple-bg2.jpeg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          minHeight: "380px",
+        }}
+      >
         <Image
-          src="/hero-banner-purple.png"
-          alt="Mavren — Navigate Ambiguity, Ship Clarity"
-          width={1920}
-          height={600}
-          className="w-full h-auto"
+          src="/logo-name-nobg-white.png"
+          alt="Mavren — Map. Code. Ship."
+          width={320}
+          height={320}
+          className="object-contain"
           priority
         />
       </div>
@@ -32,7 +40,7 @@ export default function Hero() {
             </p>
             <a
               href="#contact"
-              className="inline-block bg-[#5B21B6] text-white px-8 py-4 rounded-full font-semibold text-lg hover:opacity-80 transition-opacity"
+              className="inline-block bg-[#534AB7] text-white px-8 py-4 rounded-full font-semibold text-lg hover:opacity-80 transition-opacity"
             >
               Start a conversation
             </a>

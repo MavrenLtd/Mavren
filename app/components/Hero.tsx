@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Hero() {
   return (
     <section>
@@ -12,13 +10,11 @@ export default function Hero() {
           minHeight: "380px",
         }}
       >
-        <Image
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
           src="/logo-name-nobg-white.png"
           alt="Mavren — Map. Code. Ship."
-          width={320}
-          height={320}
-          className="object-contain"
-          priority
+          className="w-72 object-contain"
         />
       </div>
       <div className="bg-navy py-20">

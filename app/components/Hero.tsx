@@ -4,7 +4,7 @@ export default function Hero() {
       <div
         className="w-full pt-16 flex items-center justify-center"
         style={{
-          backgroundImage: "url('/purple-bg2.jpeg')",
+          backgroundImage: "url('/purple-bg2.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           minHeight: "380px",

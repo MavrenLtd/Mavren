@@ -3,13 +3,13 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section>
-      <div className="w-full pt-16">
+      <div className="w-full pt-16 flex justify-center">
         <Image
           src="/hero-banner-purple.png"
           alt="Mavren — Navigate Ambiguity, Ship Clarity"
           width={1920}
           height={600}
-          className="w-full object-cover object-center h-[220px] md:h-[320px]"
+          className="w-full h-auto max-w-5xl"
           priority
         />
       </div>

@@ -28,16 +28,16 @@ export default function WorkHighlights() {
   return (
     <section
       id="work"
-      className="py-24 bg-[#0D0B1E]"
+      className="py-24 bg-[#111111]"
       style={{ backgroundImage: "url('/hero-wave-dark.png')", backgroundSize: "cover", backgroundPosition: "center" }}
     >
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <p className="text-[#AFA9EC] font-semibold text-sm uppercase tracking-widest mb-4">
+          <p className="text-[#9CA3AF] font-semibold text-sm uppercase tracking-widest mb-4">
             Case Studies
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Work Highlights</h2>
-          <p className="text-[#AFA9EC] text-lg max-w-2xl mx-auto">
+          <p className="text-[#A0A0A0] text-lg max-w-2xl mx-auto">
             A selection of the work that shaped Mavren. Our director brings over 18 years of
             hands-on experience — here are some of the projects that define how we work.
           </p>
@@ -47,14 +47,14 @@ export default function WorkHighlights() {
           {highlights.map((item) => (
             <div
               key={item.title}
-              className="bg-[#26215C] rounded-2xl p-8 border border-[#534AB7]/30 flex flex-col"
+              className="bg-[#1C1C1C] rounded-2xl p-8 border border-white/10 flex flex-col"
             >
-              <p className="text-[#AFA9EC] text-xs font-semibold uppercase tracking-widest mb-4">
+              <p className="text-[#9CA3AF] text-xs font-semibold uppercase tracking-widest mb-4">
                 {item.tag}
               </p>
               <h3 className="text-xl font-bold text-white mb-4">{item.title}</h3>
-              <p className="text-[#AFA9EC] leading-relaxed text-sm mb-6 flex-1">{item.teaser}</p>
-              <p className="text-[#EEEDFE] font-semibold italic text-sm border-t border-[#534AB7]/30 pt-5">
+              <p className="text-[#A0A0A0] leading-relaxed text-sm mb-6 flex-1">{item.teaser}</p>
+              <p className="text-[#E5E5E5] font-semibold italic text-sm border-t border-white/10 pt-5">
                 {item.closing}
               </p>
             </div>

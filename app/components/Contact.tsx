@@ -2,18 +2,18 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="py-24 bg-[#EEEDFE]"
+      className="py-24 bg-[#F5F5F5]"
       style={{ backgroundImage: "url('/hero-wave-light.png')", backgroundSize: "cover", backgroundPosition: "center" }}
     >
       <div className="max-w-3xl mx-auto px-6 text-center">
-        <p className="text-[#534AB7] font-semibold text-sm uppercase tracking-widest mb-4">
+        <p className="text-[#6B7280] font-semibold text-sm uppercase tracking-widest mb-4">
           Let&apos;s Talk
         </p>
-        <h2 className="text-3xl md:text-4xl font-bold text-[#0D0B1E] mb-6">Get In Touch</h2>
-        <p className="text-[#26215C] text-lg mb-3 leading-relaxed">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#111111] mb-6">Get In Touch</h2>
+        <p className="text-[#404040] text-lg mb-3 leading-relaxed">
           We&apos;re currently available for new engagements.
         </p>
-        <p className="text-[#26215C] text-lg mb-10 leading-relaxed">
+        <p className="text-[#404040] text-lg mb-10 leading-relaxed">
           Whether you have a project in mind, a problem to solve, or just want to explore what
           working together might look like — we&apos;d love to hear from you.
         </p>
@@ -33,11 +33,11 @@ export default function Contact() {
             Connect on LinkedIn
           </a>
         </div>
-        <p className="text-[#26215C] text-sm">
+        <p className="text-[#404040] text-sm">
           Or email us directly at{" "}
           <a
             href="mailto:info@mavren.dev"
-            className="text-[#534AB7] underline underline-offset-4"
+            className="text-[#111111] underline underline-offset-4"
           >
             info@mavren.dev
           </a>

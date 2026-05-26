@@ -4,18 +4,18 @@ export default function About() {
   return (
     <section
       id="about"
-      className="py-24 bg-[#EEEDFE]"
+      className="py-24 bg-[#F5F5F5]"
       style={{ backgroundImage: "url('/hero-wave-light.png')", backgroundSize: "cover", backgroundPosition: "center" }}
     >
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
         <div>
-          <p className="text-[#534AB7] font-semibold text-sm uppercase tracking-widest mb-4">
+          <p className="text-[#6B7280] font-semibold text-sm uppercase tracking-widest mb-4">
             About Mavren
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#0D0B1E] mb-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#111111] mb-8">
             Built differently.<br />By design.
           </h2>
-          <div className="space-y-5 text-[#26215C] text-lg leading-relaxed">
+          <div className="space-y-5 text-[#404040] text-lg leading-relaxed">
             <p>
               We started Mavren because we believed there was a better way to deliver technology
               consulting — less PowerPoint, more working software.
@@ -38,7 +38,7 @@ export default function About() {
               consultants and partner firms we work with regularly — so we can scale up quickly
               without ever compromising on quality.
             </p>
-            <p className="text-[#0D0B1E] font-semibold">
+            <p className="text-[#111111] font-semibold">
               Whether you need a single embedded engineer or a small delivery team, we&apos;ll make it
               work.
             </p>

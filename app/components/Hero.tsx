@@ -9,7 +9,7 @@ export default function Hero() {
           alt="Mavren — Navigate Ambiguity, Ship Clarity"
           width={1920}
           height={600}
-          className="w-full h-auto"
+          className="w-full object-cover object-center h-[220px] md:h-[320px]"
           priority
         />
       </div>

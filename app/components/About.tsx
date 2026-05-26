@@ -46,11 +46,11 @@ export default function About() {
         </div>
         <div className="flex justify-center">
           <Image
-            src="/Mavren-Logo-Stacked-WavyBg-720x720.png"
-            alt="Mavren"
-            width={420}
-            height={420}
-            className="rounded-2xl"
+            src="/working-hands.png"
+            alt="Hands on keyboard coding"
+            width={560}
+            height={374}
+            className="rounded-2xl object-cover w-full"
           />
         </div>
       </div>

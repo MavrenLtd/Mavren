@@ -17,7 +17,10 @@ export default function Hero() {
           className="w-72 object-contain"
         />
       </div>
-      <div className="bg-navy py-20">
+      <div
+        className="py-20 bg-[#111111]"
+        style={{ backgroundImage: "url('/hero-wave-dark.png')", backgroundSize: "cover", backgroundPosition: "center" }}
+      >
         <div className="max-w-7xl mx-auto px-6">
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-lavender font-semibold text-sm uppercase tracking-widest mb-4">

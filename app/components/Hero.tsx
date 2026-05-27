@@ -10,12 +10,14 @@ export default function Hero() {
           minHeight: "380px",
         }}
       >
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/logo-name-nobg-white.png"
-          alt="Mavren — Map. Code. Ship."
-          className="w-72 object-contain"
-        />
+        <div className="flex items-center gap-8">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/logo-white.png" alt="Mavren" className="w-24 h-24" />
+          <div className="text-white">
+            <p className="text-6xl font-bold tracking-wide leading-none">Mavren</p>
+            <p className="text-base tracking-[0.3em] uppercase text-white/80 mt-2">Map. Code. Ship.</p>
+          </div>
+        </div>
       </div>
       <div
         className="py-20 bg-[#111111]"

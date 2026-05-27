@@ -13,7 +13,7 @@ export default function Hero() {
         <div className="flex items-center gap-8">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/logo-white.png" alt="Mavren" className="w-24 h-24" />
-          <div className="text-white">
+          <div className="text-white text-center">
             <p className="text-6xl font-bold tracking-wide leading-none">Mavren</p>
             <p className="text-base tracking-[0.3em] uppercase text-white/80 mt-2">Map. Code. Ship.</p>
           </div>

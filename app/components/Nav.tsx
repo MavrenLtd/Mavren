@@ -6,7 +6,7 @@ export default function Nav() {
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/logo-white.png" alt="Mavren" className="w-9 h-9" />
+          <img src="/map-nobg.png" alt="Mavren" className="w-9 h-9" />
           <span className="text-light-lavender font-semibold text-lg tracking-wide">Mavren</span>
         </Link>
         <div className="hidden md:flex items-center gap-8">

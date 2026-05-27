@@ -14,7 +14,6 @@ const services = [
   {
     title: "Rapid Prototyping & Proof of Concept",
     icon: "POC.png",
-    iconSize: "w-24 h-24",
     description:
       "Got an idea but need to see it working before committing? We turn ambiguous briefs into functional prototypes fast — so you can validate, iterate and make decisions with confidence.",
   },
@@ -64,7 +63,7 @@ export default function Services() {
               className="bg-[#1C1C1C] rounded-2xl p-8 border border-white/10 hover:border-white/20 transition-colors flex flex-col items-center text-center"
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={`/${service.icon}`} alt={service.title} className={`${service.iconSize ?? "w-16 h-16"} object-contain mb-5`} />
+              <img src={`/${service.icon}`} alt={service.title} className="w-16 h-16 object-contain mb-5" />
               <h3 className="text-xl font-bold text-white mb-3">{service.title}</h3>
               <p className="text-[#A0A0A0] leading-relaxed text-sm">{service.description}</p>
             </div>

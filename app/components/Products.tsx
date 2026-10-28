@@ -15,7 +15,7 @@ const products: Product[] = [
     badge: "In development",
     tagline: "Run your trade business from your phone.",
     body:
-      "MavrenTrade is a mobile app for UK sole traders and small teams (gardeners, plumbers, electricians and more) to keep clients, jobs, quotes and invoices in one place. It works offline on site and syncs when you're back in signal. Quotes and invoices can be emailed to clients straight from the app as PDFs, with replies going to the business's own email address.",
+      "MavrenTrade is a mobile app for UK sole traders and small teams (gardeners, plumbers, electricians and more) to keep clients, jobs, quotes and invoices in one place. It works offline on site and syncs automatically when you're back online. Quotes and invoices can be emailed to clients straight from the app as PDFs, with replies going to the business's own email address.",
     smallPrint: "Built in the UK, with data hosted in the UK and EU.",
     footer: "Coming to iOS and Android in 2027.",
     linkLabel: "Register interest",

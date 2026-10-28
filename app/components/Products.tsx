@@ -34,11 +34,13 @@ const products: Product[] = [
   },
   {
     title: "Mavren Hub",
-    badge: "Internal tool",
-    tagline: "The system we run Mavren on.",
+    badge: "In development",
+    tagline: "Run the business side of your business in one place.",
     body:
-      "Mavren Hub is our own in-house operating system: shared and personal task boards, time logging synced with our calendars, invoicing and expense tracking, and a product pipeline that takes ideas from first sketch to validated build. It's where products like MavrenTrade and CutMap start.",
-    footer: "Built by us, for us.",
+      "Mavren Hub is a web-based tool for small businesses and consultancies: shared and personal task boards, time logging synced with your calendar, invoices built straight from the time you've logged, expense and VAT tracking, and a pipeline for taking new ideas from first sketch to validated plan. We built it to run Mavren, and we're now opening it up to other businesses.",
+    footer: "Works in your web browser.",
+    linkLabel: "Register interest",
+    linkHref: "mailto:info@mavren.dev?subject=Mavren%20Hub%20interest",
   },
 ];
 

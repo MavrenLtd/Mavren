@@ -1,4 +1,15 @@
-const products = [
+type Product = {
+  title: string;
+  badge: string;
+  tagline: string;
+  body: string;
+  smallPrint?: string;
+  footer: string;
+  linkLabel?: string;
+  linkHref?: string;
+};
+
+const products: Product[] = [
   {
     title: "MavrenTrade",
     badge: "In development",
@@ -9,6 +20,25 @@ const products = [
     footer: "Coming to iOS and Android in 2027.",
     linkLabel: "Register interest",
     linkHref: "mailto:info@mavren.dev?subject=MavrenTrade%20interest",
+  },
+  {
+    title: "CutMap",
+    badge: "In planning",
+    tagline: "Navigate the UK canal network, even with no signal.",
+    body:
+      "CutMap is a navigation and mapping app for UK canal boaters. It brings official waterway data (routes, locks, bridges and winding holes) together with community-sourced amenities like water points, fuel stops and canalside pubs, plus satellite and towpath-level views. Maps and canal data are saved to your device, so it keeps working in the middle of nowhere.",
+    smallPrint: "No account needed to browse. Sign in to save your journeys and help keep the map up to date.",
+    footer: "For web, iOS and Android.",
+    linkLabel: "Register interest",
+    linkHref: "mailto:info@mavren.dev?subject=CutMap%20interest",
+  },
+  {
+    title: "Mavren Hub",
+    badge: "Internal tool",
+    tagline: "The system we run Mavren on.",
+    body:
+      "Mavren Hub is our own in-house operating system: shared and personal task boards, time logging synced with our calendars, invoicing and expense tracking, and a product pipeline that takes ideas from first sketch to validated build. It's where products like MavrenTrade and CutMap start.",
+    footer: "Built by us, for us.",
   },
 ];
 
@@ -27,7 +57,7 @@ export default function Products() {
           </p>
         </div>
 
-        <div className="max-w-3xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8">
           {products.map((product) => (
             <div
               key={product.title}
@@ -41,15 +71,19 @@ export default function Products() {
               </div>
               <p className="text-[#E5E5E5] font-semibold mb-4">{product.tagline}</p>
               <p className="text-[#A0A0A0] leading-relaxed text-sm mb-4">{product.body}</p>
-              <p className="text-[#9CA3AF] text-xs mb-6">{product.smallPrint}</p>
-              <div className="border-t border-white/10 pt-5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+              {product.smallPrint && (
+                <p className="text-[#9CA3AF] text-xs mb-6">{product.smallPrint}</p>
+              )}
+              <div className="mt-auto border-t border-white/10 pt-5 flex flex-col gap-4">
                 <p className="text-[#E5E5E5] font-semibold italic text-sm">{product.footer}</p>
-                <a
-                  href={product.linkHref}
-                  className="bg-[#534AB7] text-white px-5 py-2 rounded-full text-sm font-medium hover:opacity-80 transition-opacity text-center"
-                >
-                  {product.linkLabel}
-                </a>
+                {product.linkHref && (
+                  <a
+                    href={product.linkHref}
+                    className="bg-[#534AB7] text-white px-5 py-2 rounded-full text-sm font-medium hover:opacity-80 transition-opacity text-center"
+                  >
+                    {product.linkLabel}
+                  </a>
+                )}
               </div>
             </div>
           ))}

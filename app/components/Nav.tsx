@@ -13,6 +13,7 @@ export default function Nav() {
           <Link href="#about" className="text-lavender hover:text-light-lavender transition-colors text-sm">About</Link>
           <Link href="#services" className="text-lavender hover:text-light-lavender transition-colors text-sm">Services</Link>
           <Link href="#work" className="text-lavender hover:text-light-lavender transition-colors text-sm">Work</Link>
+          <Link href="#products" className="text-lavender hover:text-light-lavender transition-colors text-sm">Products</Link>
           <Link
             href="#contact"
             className="bg-[#534AB7] text-white px-5 py-2 rounded-full text-sm font-medium hover:opacity-80 transition-opacity"
